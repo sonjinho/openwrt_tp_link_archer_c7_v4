@@ -1,0 +1,25 @@
+Source-Makefile: feeds/packages/net/seafile-seahub/Makefile
+
+Package: seafile-seahub
+Version: 6.3.0-d1ab146a936a6ea1e1581bf3f194e86742f0d3cd-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +simplejson +python +pillow +chardet +django +django-appconf +django-compressor +django-constance +django-formtools +django-jsonfield +django-picklefield +django-postoffice +django-restframework +django-simple-captcha +django-statici18n +django-webpack-loader +et_xmlfile +flup +gunicorn +jdcal +openpyxl +python-dateutil +python-mysql +python-qrcode +python-requests +python-requests-oauthlib +pytz +rcssmin
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Seafile server - seahub component
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
+Source: seafile-seahub-6.3.0-d1ab146a936a6ea1e1581bf3f194e86742f0d3cd.tar.gz
+License: Apache-2.0
+Type: ipkg
+Description:    The web end of seafile server.
+
+   NOTE: in order to have better performance, localization support is turned off by default.
+   Please set 'USE_I18N = True' in seahub_settings.py if you intend to use languages other than English.
+http://seafile.com/
+Gergely Kiss <mail.gery@gmail.com>
+@@
+
+

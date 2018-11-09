@@ -1,0 +1,23 @@
+Source-Makefile: feeds/packages/lang/python/pyjwt/Makefile
+
+Package: pyjwt
+Submenu: Python
+Version: 1.6.4-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: JSON Web Token implementation in Python
+Maintainer: Eneas U de Queiroz <cote2004-github@yahoo.com>
+Source: PyJWT-1.6.4.tar.gz
+License: MIT
+Type: ipkg
+Description:   A Python implementation of RFC 7519.
+http://github.com/jpadilla/pyjwt
+Eneas U de Queiroz <cote2004-github@yahoo.com>
+@@
+
+

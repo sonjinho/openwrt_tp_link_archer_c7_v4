@@ -1,0 +1,21 @@
+Source-Makefile: package/kernel/kmod-sched-cake/Makefile
+
+Package: kmod-sched-cake
+Submenu: Network Support
+Version: <LINUX_VERSION>+2018-10-02-ddf4c95145f2fbcca16f19e01f3195d213ca760b-1
+Depends: +kmod-ipt-conntrack @!LINUX_3_18
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Cake fq_codel/blue derived shaper
+Maintainer: Kevin Darbyshire-Bryant <ldir@darbyshire-bryant.me.uk>
+Source: sched-cake-2018-10-02-ddf4c95145f2fbcca16f19e01f3195d213ca760b.tar.xz
+Type: ipkg
+Description:   Common Applications Kept Enhanced fq_codel/blue derived shaper
+https://github.com/dtaht/sch_cake
+Kevin Darbyshire-Bryant <ldir@darbyshire-bryant.me.uk>
+@@
+
+

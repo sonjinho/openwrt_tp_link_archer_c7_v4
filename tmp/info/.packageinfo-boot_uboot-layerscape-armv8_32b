@@ -1,0 +1,71 @@
+Source-Makefile: package/boot/uboot-layerscape-armv8_32b/Makefile
+
+Package: u-boot-ls1012ardb-image
+Version: lsdk-1806-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_layerscape_armv8_32b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: boot
+Category: Boot Loaders
+Repository: base
+Title: U-Boot image for NXP LS1012ARDB
+Maintainer: 
+Source: uboot-layerscape-armv8_32b-lsdk-1806.tar.xz
+Type: ipkg
+Description: U-Boot image for NXP LS1012ARDB
+
+@@
+
+Package: u-boot-ls1012afrwy-image
+Version: lsdk-1806-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_layerscape_armv8_32b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: boot
+Category: Boot Loaders
+Repository: base
+Title: U-Boot image for NXP LS1012FRWY
+Maintainer: 
+Source: uboot-layerscape-armv8_32b-lsdk-1806.tar.xz
+Type: ipkg
+Description: U-Boot image for NXP LS1012FRWY
+
+@@
+
+Package: u-boot-ls1043ardb-image
+Version: lsdk-1806-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_layerscape_armv8_32b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: boot
+Category: Boot Loaders
+Repository: base
+Title: U-Boot image for NXP LS1043ARDB
+Maintainer: 
+Source: uboot-layerscape-armv8_32b-lsdk-1806.tar.xz
+Type: ipkg
+Description: U-Boot image for NXP LS1043ARDB
+
+@@
+
+Package: u-boot-ls1046ardb-image
+Version: lsdk-1806-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_layerscape_armv8_32b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: boot
+Category: Boot Loaders
+Repository: base
+Title: U-Boot image for NXP LS1046ARDB
+Maintainer: 
+Source: uboot-layerscape-armv8_32b-lsdk-1806.tar.xz
+Type: ipkg
+Description: U-Boot image for NXP LS1046ARDB
+
+@@
+
+

@@ -1,0 +1,23 @@
+Source-Makefile: feeds/packages/lang/python/python-requests/Makefile
+
+Package: python-requests
+Submenu: Python
+Version: 2.20.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +chardet +python-idna +python-urllib3 +python-certifi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: HTTP library for Python
+Maintainer: Eneas U de Queiroz <cote2004-github@yahoo.com>
+Source: requests-2.20.0.tar.gz
+License: Apache-2.0
+Type: ipkg
+Description:   Requests is the only Non-GMO HTTP library for Python, safe for human consumption.
+http://python-requests.org/
+Eneas U de Queiroz <cote2004-github@yahoo.com>
+@@
+
+

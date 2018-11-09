@@ -1,0 +1,23 @@
+Source-Makefile: feeds/packages/lang/python/python-requests-oauthlib/Makefile
+
+Package: python-requests-oauthlib
+Submenu: Python
+Version: 1.0.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +python-requests +python-oauthlib +python-cryptography +pyjwt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: OAuthlib authentication support for Requests.
+Maintainer: Eneas U de Queiroz <cote2004-github@yahoo.com>
+Source: requests-oauthlib-1.0.0.tar.gz
+License: ISC
+Type: ipkg
+Description:   This project provides first-class OAuth library support for Requests.
+https://github.com/requests/requests-oauthlib
+Eneas U de Queiroz <cote2004-github@yahoo.com>
+@@
+
+

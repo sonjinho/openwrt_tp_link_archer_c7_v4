@@ -1,0 +1,23 @@
+Source-Makefile: feeds/packages/lang/python/django-ranged-response/Makefile
+
+Package: django-ranged-response
+Submenu: Python
+Version: 0.2.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +django
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Modified Django FileResponse that adds Content-Range headers.
+Maintainer: Eneas U de Queiroz <cote2004-github@yahoo.com>
+Source: django-ranged-response-0.2.0.tar.gz
+License: MIT
+Type: ipkg
+Description:   Modified Django FileResponse that adds Content-Range headers.
+https://github.com/wearespindle/django-ranged-fileresponse
+Eneas U de Queiroz <cote2004-github@yahoo.com>
+@@
+
+

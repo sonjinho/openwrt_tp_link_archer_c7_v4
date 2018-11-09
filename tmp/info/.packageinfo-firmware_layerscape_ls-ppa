@@ -1,0 +1,105 @@
+Source-Makefile: package/firmware/layerscape/ls-ppa/Makefile
+
+Package: layerscape-ppa-ls1012ardb
+Version: lsdk-1806-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_layerscape
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: NXP LS1012ARDB PPA binary
+Maintainer: 
+Source: ls-ppa-lsdk-1806.tar.xz
+Type: ipkg
+Description: NXP LS1012ARDB PPA binary
+
+@@
+
+Package: layerscape-ppa-ls1012afrwy
+Version: lsdk-1806-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_layerscape
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: NXP LS1012AFRWY PPA binary
+Maintainer: 
+Source: ls-ppa-lsdk-1806.tar.xz
+Type: ipkg
+Description: NXP LS1012AFRWY PPA binary
+
+@@
+
+Package: layerscape-ppa-ls1043ardb
+Version: lsdk-1806-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_layerscape
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: NXP LS1043ARDB PPA binary
+Maintainer: 
+Source: ls-ppa-lsdk-1806.tar.xz
+Type: ipkg
+Description: NXP LS1043ARDB PPA binary
+
+@@
+
+Package: layerscape-ppa-ls1046ardb
+Version: lsdk-1806-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_layerscape
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: NXP LS1046ARDB PPA binary
+Maintainer: 
+Source: ls-ppa-lsdk-1806.tar.xz
+Type: ipkg
+Description: NXP LS1046ARDB PPA binary
+
+@@
+
+Package: layerscape-ppa-ls1088ardb
+Version: lsdk-1806-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_layerscape
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: NXP LS1088ARDB PPA binary
+Maintainer: 
+Source: ls-ppa-lsdk-1806.tar.xz
+Type: ipkg
+Description: NXP LS1088ARDB PPA binary
+
+@@
+
+Package: layerscape-ppa-ls2088ardb
+Version: lsdk-1806-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_layerscape
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: NXP LS2088ARDB PPA binary
+Maintainer: 
+Source: ls-ppa-lsdk-1806.tar.xz
+Type: ipkg
+Description: NXP LS2088ARDB PPA binary
+
+@@
+
+

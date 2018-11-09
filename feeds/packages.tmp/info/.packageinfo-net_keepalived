@@ -1,0 +1,23 @@
+Source-Makefile: feeds/packages/net/keepalived/Makefile
+
+Package: keepalived
+Version: 2.0.7-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libip4tc +IPV6:libip6tc +libxtables +kmod-macvlan +libmagic +libnl-route +libnfnetlink +kmod-nf-ipvs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Failover and monitoring daemon for LVS clusters
+Maintainer: Ben Kelly <ben@benjii.net> Florian Eckert <fe@dev.tdt.de>
+Source: keepalived-2.0.7.tar.gz
+License: GPL-2.0+
+LicenseFiles: COPYING
+Type: ipkg
+Description:  Failover and monitoring daemon for Linux Virtual Server (LVS) clusters.
+http://www.keepalived.org/
+Ben Kelly <ben@benjii.net> Florian Eckert <fe@dev.tdt.de>
+@@
+
+

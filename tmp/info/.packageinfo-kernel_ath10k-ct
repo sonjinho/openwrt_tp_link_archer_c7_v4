@@ -1,0 +1,28 @@
+Source-Makefile: package/kernel/ath10k-ct/Makefile
+
+Package: kmod-ath10k-ct
+Submenu: Wireless Drivers
+Version: <LINUX_VERSION>+2018-09-29-b9989fbd5d6e3269b3e49ab3ec71b4174a02209e-3
+Depends: +kmod-mac80211 +kmod-ath +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +@DRIVER_11W_SUPPORT @PCI_SUPPORT +kmod-hwmon-core
+Conflicts: 
+Menu-Depends: 
+Provides: kmod-ath10k
+Section: kernel
+Category: Kernel modules
+Title: ath10k-ct driver optimized for CT ath10k firmware
+Maintainer: Ben Greear <greearb@candelatech.com>
+Source: ath10k-ct-2018-09-29-b9989fbd5d6e3269b3e49ab3ec71b4174a02209e.tar.xz
+License: GPLv2
+Type: ipkg
+Description: ath10k-ct driver optimized for CT ath10k firmware
+Ben Greear <greearb@candelatech.com>
+@@
+Config:
+
+       config ATH10K-CT_LEDS
+               bool "Enable LED support"
+               default y
+               depends on PACKAGE_kmod-ath10k-ct
+@@
+
+

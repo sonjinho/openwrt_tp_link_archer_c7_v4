@@ -1,0 +1,23 @@
+Source-Makefile: feeds/packages/lang/python/python-qrcode/Makefile
+
+Package: python-qrcode
+Submenu: Python
+Version: 6.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +python-six
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: QR Code image generator
+Maintainer: Eneas U de Queiroz <cote2004-github@yahoo.com>
+Source: qrcode-6.0.tar.gz
+License: BSD-3-Clause
+Type: ipkg
+Description:   Pure python QR Code generator
+https://github.com/lincolnloop/python-qrcode
+Eneas U de Queiroz <cote2004-github@yahoo.com>
+@@
+
+
