@@ -1,4 +1,4 @@
 beacon.c - hostapd_gen_probe_resp
 beacon.c - hostapd_eid_csa
 beacon.c - handle_probe_req
-ibss)rsn.c - ibss_rsn_send_auth
+ibss_rsn.c - ibss_rsn_send_auth
