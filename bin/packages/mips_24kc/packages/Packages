@@ -1,0 +1,120 @@
+Package: coreutils-sleep
+Version: 8.23-3
+Depends: libc, coreutils
+Section: utils
+Architecture: mips_24kc
+Installed-Size: 15768
+Filename: coreutils-sleep_8.23-3_mips_24kc.ipk
+Size: 16443
+SHA256sum: 38fdfd1a2d8074bcd8a522b7b831c862a27a015a8c62314a53255635607ba2b8
+Description:  Full version of standard GNU sleep utility.
+
+Package: coreutils
+Version: 8.23-3
+Depends: libc
+Section: utils
+Architecture: mips_24kc
+Installed-Size: 104
+Filename: coreutils_8.23-3_mips_24kc.ipk
+Size: 907
+SHA256sum: 4262485d6f9d94d3b066d2ef18ed30f5fecbde72d4bcc2eb10d6de68a70ee744
+Description:  Full versions of standard GNU utilities. If an equivalent Busybox applet is
+ available, you should consider compiling that instead as Busybox applets are
+ usually smaller, at the expense of reduced functionality.
+
+Package: libunbound
+Version: 1.8.1-3
+Depends: libc, libopenssl, libpthread
+License: BSD-3-Clause
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 676464
+Filename: libunbound_1.8.1-3_mips_24kc.ipk
+Size: 661889
+SHA256sum: 2a7bb34999518891315e393e1f0cc535e7eade7c0fcc87bc73df779d8d24b8d4
+Description:  This package contains the Unbound shared library.
+
+Package: openvswitch-common
+Version: 2.10.1-1
+Depends: libc, librt, openvswitch-libopenvswitch, openvswitch-libofproto, openvswitch-libovsdb, libunbound
+License: Apache-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 102143
+Filename: openvswitch-common_2.10.1-1_mips_24kc.ipk
+Size: 99184
+SHA256sum: 2036002ce3d70feacb129600dd68f8faa28e9a6f74789249f99180ca5962e0e8
+Description:  Open vSwitch (common files)
+
+Package: openvswitch-libofproto
+Version: 2.10.1-1
+Depends: libc, librt, libunbound
+License: Apache-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 201368
+Filename: openvswitch-libofproto_2.10.1-1_mips_24kc.ipk
+Size: 201134
+SHA256sum: 4914f3bd821d09628316aad1a7c2abadc74a9e1ab3018bcce0efa1427b8ac57b
+Description:  Open vSwitch (libofproto.so libsflow.so)
+
+Package: openvswitch-libopenvswitch
+Version: 2.10.1-1
+Depends: libc, libopenssl, librt, libunbound
+License: Apache-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 805580
+Filename: openvswitch-libopenvswitch_2.10.1-1_mips_24kc.ipk
+Size: 800130
+SHA256sum: 64f5838168b097201c8e4305ba982d3ce8372864ea66bc68cf71d4f7ac3b3460
+Description:  Open vSwitch (libopenvswitch.so)
+
+Package: openvswitch-libovsdb
+Version: 2.10.1-1
+Depends: libc, librt, libunbound
+License: Apache-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 93107
+Filename: openvswitch-libovsdb_2.10.1-1_mips_24kc.ipk
+Size: 93757
+SHA256sum: cc0d9b1b575b36c11acc2d995f713045d4e5c2b3628aa76923fb17e5ae3b2feb
+Description:  Open vSwitch (libovsdb.so)
+
+Package: openvswitch-ovsdb
+Version: 2.10.1-1
+Depends: libc, librt, openvswitch-libopenvswitch, openvswitch-libovsdb, libunbound
+License: Apache-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 14646
+Filename: openvswitch-ovsdb_2.10.1-1_mips_24kc.ipk
+Size: 14624
+SHA256sum: d4692b62441f81af4f232ee76060e0d78a897648dc8f86cd7eb560396e7fad1b
+Description:  Open vSwitch (ovsdb-server)
+
+Package: openvswitch-vswitchd
+Version: 2.10.1-1
+Depends: libc, librt, openvswitch-libopenvswitch, openvswitch-libofproto, libunbound
+License: Apache-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 35897
+Filename: openvswitch-vswitchd_2.10.1-1_mips_24kc.ipk
+Size: 34187
+SHA256sum: ca767009825100f87975d6298cbf07a8efc4362ed4ca0cf87a8c49d0140e82bb
+Description:  Open vSwitch (ovs-vswitchd)
+
+Package: openvswitch
+Version: 2.10.1-1
+Depends: libc, librt, coreutils, coreutils-sleep, uuidgen, openvswitch-common, openvswitch-vswitchd, openvswitch-ovsdb, kmod-openvswitch, libunbound
+License: Apache-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 2354
+Filename: openvswitch_2.10.1-1_mips_24kc.ipk
+Size: 3157
+SHA256sum: 6739483c947ba1decd14d82839d611d605952f7d60b96906f08425b7c4a69f9e
+Description:  Open vSwitch
+
