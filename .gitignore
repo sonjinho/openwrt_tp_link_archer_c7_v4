@@ -6,7 +6,7 @@
 /.config
 /.config.old
 #/bin
-!/build_dir/target-mips_24kc_musl/hostapd-full-internal/
+!/build_dir/target-mips_24kc_musl/hostapd-full-internal
 /build_dir
 /staging_dir
 /tmp
