@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/net/tgt/Makefile
 
 Package: tgt
-Version: 1.0.73-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libaio @KERNEL_AIO
+Version: 1.0.74-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libaio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Network
 Repository: base
 Title: userspace iSCSI target
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
-Source: tgt-1.0.73.tar.gz
+Source: tgt-1.0.74.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: Linux SCSI target framework (tgt) aims to simplify various SCSI target driver (iSCSI, Fibre Channel, SRP, etc) creation and maintenance.

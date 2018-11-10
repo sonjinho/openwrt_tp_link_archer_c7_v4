@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/libssh/Makefile
 
 Package: libssh
-Version: 0.7.6-1
+Version: 0.7.6-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt +zlib +libopenssl
 Conflicts: 
 Menu-Depends: 

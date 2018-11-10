@@ -22605,8 +22605,8 @@ Source-Makefile: feeds/packages/libs/libmraa/Makefile
 Build-Depends: node python/host swig/host node/host
 
 Package: libmraa
-Version: 0.9.0-049ba5fa9f2d18ac0ec6729c46916b34998d3c5f-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +libstdcpp
+Version: 2.0.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +libstdcpp +libjson-c
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22615,7 +22615,7 @@ Category: Libraries
 Repository: base
 Title: Intel IoT lowlevel IO library
 Maintainer: John Crispin <blogic@openwrt.org>
-Source: libmraa-0.9.0-049ba5fa9f2d18ac0ec6729c46916b34998d3c5f.tar.gz
+Source: libmraa-2.0.0.tar.gz
 License: LGPL-2.1
 Type: ipkg
 Description: Intel IoT lowlevel IO library
@@ -23500,7 +23500,7 @@ Ted Hess <thess@kitschensync.net>, Mike Brady <mikebrady@eircom.net>
 Source-Makefile: feeds/packages/libs/libssh/Makefile
 
 Package: libssh
-Version: 0.7.6-1
+Version: 0.7.6-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt +zlib +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -28302,7 +28302,7 @@ Source-Makefile: feeds/packages/mail/alpine/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: alpine
-Version: 2.21.9999-1
+Version: 2.21.9999-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libncurses +libpthread +libpam +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -28327,7 +28327,7 @@ Antti Seppälä <a.seppala@gmail.com>
 @@
 
 Package: alpine-nossl
-Version: 2.21.9999-1
+Version: 2.21.9999-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libncurses +libpthread +libpam +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
@@ -28727,7 +28727,7 @@ https://marlam.de/msmtp
 
 Package: msmtp-mta
 Version: 1.6.8-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full @(PACKAGE_msmtp||PACAKGE_msmtp-nossl)
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full @(PACKAGE_msmtp||PACKAGE_msmtp-nossl)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -40349,7 +40349,7 @@ Source-Makefile: feeds/packages/net/nginx/Makefile
 
 Package: nginx
 Submenu: Web Servers/Proxies
-Version: 1.15.5-1
+Version: 1.15.5-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +NGINX_PCRE:libpcre +(NGINX_SSL||NGINX_HTTP_CACHE||NGINX_HTTP_AUTH_BASIC):libopenssl +NGINX_HTTP_GZIP:zlib +NGINX_LUA:liblua +libpthread +NGINX_DAV:libexpat
 Conflicts: 
 Menu-Depends: 
@@ -40373,7 +40373,7 @@ Config:
 
 Package: nginx-ssl
 Submenu: Web Servers/Proxies
-Version: 1.15.5-1
+Version: 1.15.5-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +NGINX_PCRE:libpcre +(NGINX_SSL||NGINX_HTTP_CACHE||NGINX_HTTP_AUTH_BASIC):libopenssl +NGINX_HTTP_GZIP:zlib +NGINX_LUA:liblua +libpthread +NGINX_DAV:libexpat +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -40397,7 +40397,7 @@ Config:
 
 Package: nginx-all-module
 Submenu: Web Servers/Proxies
-Version: 1.15.5-1
+Version: 1.15.5-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libopenssl +zlib +liblua +libpthread +libexpat
 Conflicts: 
 Menu-Depends: 
@@ -40418,7 +40418,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-luci
 Submenu: Web Servers/Proxies
-Version: 1.15.5-1
+Version: 1.15.5-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +uwsgi-cgi +uwsgi-cgi-luci-support +nginx
 Conflicts: 
 Menu-Depends: 
@@ -40438,7 +40438,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-luci-ssl
 Submenu: Web Servers/Proxies
-Version: 1.15.5-1
+Version: 1.15.5-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +uwsgi-cgi +uwsgi-cgi-luci-support +nginx-ssl
 Conflicts: 
 Menu-Depends: 
@@ -47269,8 +47269,8 @@ Alexandru Ardelean <ardeleanalex@gmail.com>
 Source-Makefile: feeds/packages/net/tgt/Makefile
 
 Package: tgt
-Version: 1.0.73-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libaio @KERNEL_AIO
+Version: 1.0.74-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libaio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -47279,7 +47279,7 @@ Category: Network
 Repository: base
 Title: userspace iSCSI target
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
-Source: tgt-1.0.73.tar.gz
+Source: tgt-1.0.74.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: Linux SCSI target framework (tgt) aims to simplify various SCSI target driver (iSCSI, Fibre Channel, SRP, etc) creation and maintenance.
@@ -56445,7 +56445,7 @@ Source-Makefile: feeds/packages/utils/cryptodev-linux/Makefile
 Package: kmod-cryptodev
 Submenu: Cryptographic API modules
 Default: m if ALL
-Version: <LINUX_VERSION>+1.9.git-2017-10-04--1
+Version: <LINUX_VERSION>+1.9.git-2018-11-02--1
 Depends: +kmod-crypto-authenc +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
@@ -56454,7 +56454,7 @@ Section: kernel
 Category: Kernel modules
 Title: Driver for cryptographic acceleration
 Maintainer: Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
-Source: cryptodev-linux-1.9.git-2017-10-04.tar.xz
+Source: cryptodev-linux-1.9.git-2018-11-02.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -56697,7 +56697,7 @@ Jasper Scholte <NightNL@outlook.com>
 Source-Makefile: feeds/packages/utils/dmidecode/Makefile
 
 Package: dmidecode
-Version: 3.1-1
+Version: 3.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86||TARGET_x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -56707,14 +56707,14 @@ Category: Utilities
 Repository: base
 Title: Displays BIOS informations.
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: dmidecode-3.1.tar.xz
+Source: dmidecode-3.2.tar.xz
 License: GPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
 Description: 	Dmidecode reports information about your system's hardware
 	as described in your system BIOS according to the SMBIOS/DMI
 	standard.
-http://www.nongnu.org/dmidecode/
+https://www.nongnu.org/dmidecode/
 Álvaro Fernández Rojas <noltari@gmail.com>
 @@
 

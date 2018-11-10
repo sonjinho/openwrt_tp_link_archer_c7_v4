@@ -80,7 +80,7 @@ https://marlam.de/msmtp
 
 Package: msmtp-mta
 Version: 1.6.8-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full @(PACKAGE_msmtp||PACAKGE_msmtp-nossl)
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full @(PACKAGE_msmtp||PACKAGE_msmtp-nossl)
 Conflicts: 
 Menu-Depends: 
 Provides: 

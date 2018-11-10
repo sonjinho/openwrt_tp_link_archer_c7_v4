@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/nginx/Makefile
 
 Package: nginx
 Submenu: Web Servers/Proxies
-Version: 1.15.5-1
+Version: 1.15.5-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +NGINX_PCRE:libpcre +(NGINX_SSL||NGINX_HTTP_CACHE||NGINX_HTTP_AUTH_BASIC):libopenssl +NGINX_HTTP_GZIP:zlib +NGINX_LUA:liblua +libpthread +NGINX_DAV:libexpat
 Conflicts: 
 Menu-Depends: 
@@ -26,7 +26,7 @@ Config:
 
 Package: nginx-ssl
 Submenu: Web Servers/Proxies
-Version: 1.15.5-1
+Version: 1.15.5-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +NGINX_PCRE:libpcre +(NGINX_SSL||NGINX_HTTP_CACHE||NGINX_HTTP_AUTH_BASIC):libopenssl +NGINX_HTTP_GZIP:zlib +NGINX_LUA:liblua +libpthread +NGINX_DAV:libexpat +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -50,7 +50,7 @@ Config:
 
 Package: nginx-all-module
 Submenu: Web Servers/Proxies
-Version: 1.15.5-1
+Version: 1.15.5-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libopenssl +zlib +liblua +libpthread +libexpat
 Conflicts: 
 Menu-Depends: 
@@ -71,7 +71,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-luci
 Submenu: Web Servers/Proxies
-Version: 1.15.5-1
+Version: 1.15.5-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +uwsgi-cgi +uwsgi-cgi-luci-support +nginx
 Conflicts: 
 Menu-Depends: 
@@ -91,7 +91,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-luci-ssl
 Submenu: Web Servers/Proxies
-Version: 1.15.5-1
+Version: 1.15.5-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +uwsgi-cgi +uwsgi-cgi-luci-support +nginx-ssl
 Conflicts: 
 Menu-Depends: 
